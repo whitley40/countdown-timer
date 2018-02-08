@@ -35,6 +35,13 @@ gulp.task('moveJS', function() {
     .pipe(gulp.dest('dist/js'));
 });
 
+/* move fonts across */
+
+gulp.task('moveFonts', function() {
+    return gulp.src('fonts/**')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 /* move images across */
 
 gulp.task('moveHTML', function() {
@@ -70,7 +77,7 @@ gulp.task('clean', function(){
 
 gulp.task('serve',['browserSync']);
 
-gulp.task("build", ["compileSass", "moveImgs", "moveJS"], function() {
+gulp.task("build", ["compileSass", "moveImgs", "moveJS", "moveFonts"], function() {
     return gulp.src(['*.html'])
             .pipe(gulp.dest('dist'));
 });

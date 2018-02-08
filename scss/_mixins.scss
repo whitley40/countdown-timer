@@ -11,6 +11,25 @@
   font-size: calculateRem($size);
 }
 
+//font face creation  -------------------------------------------------------
+
+@mixin font-face($fontfamily, $fontname){
+  @font-face {
+  font-family: '#{$fontfamily}';
+    src: url('../fonts/#{$fontname}.eot');
+    src: url('../fonts/.svg##{$fontfamily}') format('svg'),
+          url('../fonts/#{$fontname}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$fontname}.woff') format('woff'),
+         url('../fonts/#{$fontname}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font-face(Whitney-Book, Whitney-Book);
+@include font-face(Whitney-Medium, Whitney-Medium);
+@include font-face(Whitney-Semibold, Whitney-Semibold);
+
 
 // media query simplicity -------------------------------------------------------
 /*
@@ -27,13 +46,13 @@ remember - mobile first!!
 
 
 @mixin bp-large {
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 1000px) {
     @content;
   }
 }
 
 @mixin bp-x-large {
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1200px) {
     @content;
   }
 }
