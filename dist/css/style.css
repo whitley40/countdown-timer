@@ -1,0 +1,55 @@
+/*
+remember - mobile first!!
+@include bp-medium {
+} 
+*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 25s ease infinite; }
+
+.countdown {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.timer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .timer .day, .timer .hour, .timer .min, .timer .sec {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 20px;
+    font-size: 150px; }
+    .timer .day span.label, .timer .hour span.label, .timer .min span.label, .timer .sec span.label {
+      font-size: 20px; }
+  .timer .spacer {
+    padding: 20px;
+    font-size: 150px; }

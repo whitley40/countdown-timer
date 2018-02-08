@@ -1,35 +1,43 @@
 //main css
 
-.timerContainer {
-  width: 250px;
-  margin: 0 auto;
-  margin-top: 15px;
-  display: block;
+html, body{
+  height: 100%;
 }
 
-
-.timerContainer div {
-  display: block;
-  width: 62px;
-  float: left;
-  text-align: center;
-  font-size: 32px;
-  color: #b99400;
-  font-family: 'HelveticaNeueLight', arial, sans-serif;
+body {
+ margin: 0px;
+ padding: 0px;
+ font-family: sans-serif;
+ color: white;
+ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+ background-size: 400% 400%;
+ animation: Gradient 25s ease infinite;
 }
 
-
-.labelsContainer {
-  width: 250px;
-  margin: 0 auto;
-  margin-top: 5px;
-    display: block;
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
 }
 
-
-.labelsContainer div {
-  display: block;
-  width: 62px;
-  float: left;
-  text-align: center;
+.timer {
+  display: flex;
+  justify-content:center;
+  .day, .hour, .min, .sec{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px;
+    font-size: 150px;
+    span.label{
+      font-size: 20px;
+    }
+  }
+  .spacer {
+    padding: 20px;
+    font-size: 150px;
+  }
 }
+
