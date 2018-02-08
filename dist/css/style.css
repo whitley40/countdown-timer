@@ -43,12 +43,17 @@ body {
   background: url(../imgs/rm-road-lite.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
 
 h1 {
   font-family: "Whitney-Book", "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: normal;
-  font-size: 16px; }
+  font-size: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media only screen and (min-width: 600px) {
     h1 {
       font-size: 20px; } }
@@ -66,7 +71,7 @@ h1 {
   height: 100%;
   -ms-flex-direction: column;
       flex-direction: column;
-  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 213, 171, 0.8));
+  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 213, 171, 0.8), rgba(255, 179, 0, 0.8));
   background-size: 400% 400%;
   animation: Gradient 25s ease infinite; }
 
@@ -88,9 +93,13 @@ h1 {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    padding: 10px;
+    padding: 15px;
     width: 50px;
-    font-size: 70px; }
+    font-size: 70px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     @media only screen and (min-width: 600px) {
       .timer .day, .timer .hour, .timer .min, .timer .sec {
         padding: 15px;
@@ -103,7 +112,11 @@ h1 {
         font-size: 150px; } }
     .timer .day span.label, .timer .hour span.label, .timer .min span.label, .timer .sec span.label {
       font-size: 12px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
       @media only screen and (min-width: 600px) {
         .timer .day span.label, .timer .hour span.label, .timer .min span.label, .timer .sec span.label {
           font-size: 16px; } }
@@ -113,7 +126,11 @@ h1 {
   .timer .spacer {
     display: none;
     padding: 10px;
-    font-size: 50px; }
+    font-size: 50px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     @media only screen and (min-width: 600px) {
       .timer .spacer {
         display: block;
