@@ -1,1 +1,2 @@
-Bootstrap Styling
+Simple Countdown Timer
+CSS & JS
