@@ -1,4 +1,4 @@
-var endTime = 'February 12 2018 00:00:00 GMT+0000'
+var endTime = 'February 12 2018 00:09:00 GMT+0000'
     var newTime= "";
     var newDays = "";
     

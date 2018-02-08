@@ -6,3 +6,6 @@
 
 ### Clean
 * gulp clean - removes 'dist' folder
+
+### Date Change
+* set the date you want it to countdown to in 'countdown.js'
