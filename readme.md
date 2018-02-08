@@ -1,5 +1,5 @@
 # Simple Coundown Timer
-## Easy to theme to your needs
+## Easy to theme
 
 ### To Run Locally
 * npm install
