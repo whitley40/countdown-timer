@@ -1,1 +1,35 @@
 //main css
+
+.timerContainer {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: block;
+}
+
+
+.timerContainer div {
+  display: block;
+  width: 62px;
+  float: left;
+  text-align: center;
+  font-size: 32px;
+  color: #b99400;
+  font-family: 'HelveticaNeueLight', arial, sans-serif;
+}
+
+
+.labelsContainer {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 5px;
+    display: block;
+}
+
+
+.labelsContainer div {
+  display: block;
+  width: 62px;
+  float: left;
+  text-align: center;
+}

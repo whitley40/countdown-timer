@@ -15,7 +15,7 @@ del = require('del');
 gulp.task('compileSass', function() {
     return gulp.src('scss/styles.scss')
     .pipe(sass())
-    .pipe(rename('blog-style.css'))
+    .pipe(rename('style.css'))
     .pipe(autoprefixer())
     .pipe(gulp.dest('dist/css'));
 });
