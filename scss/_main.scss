@@ -9,13 +9,14 @@ body {
  padding: 0px;
  font-family: "Whitney-Book", "Helvetica Neue",Helvetica,Arial,sans-serif;
  color: white;
- background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
- background-size: 400% 400%;
- animation: Gradient 25s ease infinite;
+ background: url(../imgs/rm-road-lite.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
 }
 
 h1 {
-  font-family: "Whitney-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Whitney-Book", "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: normal;
   font-size: 16px;
   @include bp-medium {
@@ -32,18 +33,25 @@ h1 {
   align-items: center;
   height: 100%;
   flex-direction: column;
+  background: linear-gradient(-45deg, rgba(238, 119, 82, .8), rgba(231, 60, 126, .8), rgba(35, 166, 213, .8), rgba(35, 213, 171, .8));
+ background-size: 400% 400%;
+ animation: Gradient 25s ease infinite;
 }
 
 .timer {
   display: flex;
+  flex-direction: column;
   justify-content:center;
+  @include bp-medium {
+    flex-direction: row;
+  }
   .day, .hour, .min, .sec{
     display: flex;
     flex-direction: column;
     align-items:center;
     padding: 10px;
     width: 50px;
-    font-size: 50px;
+    font-size: 70px;
     @include bp-medium {
       padding: 15px;
       width: 100px;
@@ -56,6 +64,7 @@ h1 {
     } 
     span.label{
       font-size: 12px;
+      opacity: 0.7;
       @include bp-medium {
         font-size: 16px;
       }
@@ -65,9 +74,11 @@ h1 {
     }
   }
   .spacer {
+    display: none;
     padding: 10px;
     font-size: 50px;
     @include bp-medium {
+      display: block;
       padding: 15px;
       font-size: 100px;
     } 

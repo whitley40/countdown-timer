@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Whitney-Book";
+  src: url("../fonts/Whitney-Book.eot");
+  src: url("../fonts/.svg#Whitney-Book") format("svg"), url("../fonts/Whitney-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Book.woff") format("woff"), url("../fonts/Whitney-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Whitney-Medium";
+  src: url("../fonts/Whitney-Medium.eot");
+  src: url("../fonts/.svg#Whitney-Medium") format("svg"), url("../fonts/Whitney-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Medium.woff") format("woff"), url("../fonts/Whitney-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Whitney-Semibold";
+  src: url("../fonts/Whitney-Semibold.eot");
+  src: url("../fonts/.svg#Whitney-Semibold") format("svg"), url("../fonts/Whitney-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Semibold.woff") format("woff"), url("../fonts/Whitney-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+remember - mobile first!!
+@include bp-medium {
+} 
+*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Whitney-Book", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+  background: url(../imgs/rm-road-lite.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+h1 {
+  font-family: "Whitney-Book", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 16px; }
+  @media only screen and (min-width: 600px) {
+    h1 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1000px) {
+    h1 {
+      font-size: 24px; } }
+
+.countdown {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 213, 171, 0.8));
+  background-size: 400% 400%;
+  animation: Gradient 25s ease infinite; }
+
+.timer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media only screen and (min-width: 600px) {
+    .timer {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  .timer .day, .timer .hour, .timer .min, .timer .sec {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 10px;
+    width: 50px;
+    font-size: 70px; }
+    @media only screen and (min-width: 600px) {
+      .timer .day, .timer .hour, .timer .min, .timer .sec {
+        padding: 15px;
+        width: 100px;
+        font-size: 100px; } }
+    @media only screen and (min-width: 1000px) {
+      .timer .day, .timer .hour, .timer .min, .timer .sec {
+        padding: 20px;
+        width: 150px;
+        font-size: 150px; } }
+    .timer .day span.label, .timer .hour span.label, .timer .min span.label, .timer .sec span.label {
+      font-size: 12px;
+      opacity: 0.7; }
+      @media only screen and (min-width: 600px) {
+        .timer .day span.label, .timer .hour span.label, .timer .min span.label, .timer .sec span.label {
+          font-size: 16px; } }
+      @media only screen and (min-width: 1000px) {
+        .timer .day span.label, .timer .hour span.label, .timer .min span.label, .timer .sec span.label {
+          font-size: 18px; } }
+  .timer .spacer {
+    display: none;
+    padding: 10px;
+    font-size: 50px; }
+    @media only screen and (min-width: 600px) {
+      .timer .spacer {
+        display: block;
+        padding: 15px;
+        font-size: 100px; } }
+    @media only screen and (min-width: 1000px) {
+      .timer .spacer {
+        padding: 20px;
+        font-size: 150px; } }
