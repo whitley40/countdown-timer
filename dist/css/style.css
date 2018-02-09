@@ -62,6 +62,8 @@ h1 {
       font-size: 24px; } }
 
 .countdown {
+  transform: rotateZ(360deg);
+  backface-visibility: hidden;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -71,9 +73,9 @@ h1 {
   height: 100%;
   -ms-flex-direction: column;
       flex-direction: column;
-  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 213, 171, 0.8), rgba(255, 179, 0, 0.8));
-  background-size: 400% 400%;
-  animation: Gradient 25s ease infinite; }
+  background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8));
+  background-size: 150% 150%;
+  animation: Gradient 10s ease infinite; }
 
 .timer {
   display: -ms-flexbox;
